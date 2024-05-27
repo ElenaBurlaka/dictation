@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Mina-Regular';
+  src:url(./fonts/Mina-Regular.ttf)
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Mina-Regular;
+  height: 100%;
+}
+
