@@ -1,0 +1,31 @@
+.dictation {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    flex-direction: column;
+    margin-top: 20%;
+}
+
+.dictation a {
+    position: relative;
+    border-radius: 36px;
+    padding: 11px 45px;
+    background-color: #D3E9D3;
+    font-size: 18px;
+    color: #000;
+    text-decoration: none;
+    overflow: hidden; 
+}
+
+.dictation a:hover::before {
+    content: "";
+    position: absolute;
+    top: 0px; 
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    border: 1px solid #355B32;
+    border-radius: 33px;
+    pointer-events: none;
+    box-sizing: border-box; 
+}

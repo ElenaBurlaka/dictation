@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import mywordspopup from './MyWordsPopup.module.css';
 import close from './../../../../../src/images/close.png';
 
-const MyWordsPopup = ({ onClose, addWord }) => {
+const MyWordsPopup = ({ onClose, addWord, filteredWords }) => {
 
     const [formData, setFormData] = useState({
         word: '',

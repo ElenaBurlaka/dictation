@@ -8,5 +8,10 @@ body, html {
   padding: 0;
   font-family: Mina-Regular;
   height: 100%;
+  overflow: hidden;
+}
+
+#root {
+  height: 100%;
 }
 

@@ -1,0 +1,37 @@
+.cookie {
+    height: 60px;
+    background-color: #425142;
+    align-items: center;
+    /* position: sticky; */
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    z-index: 2;
+}
+
+.cookie__content {
+    color: #fff;
+    font-family: SoDoSans-Bold;
+    margin-left: 40px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cookie__content p {
+    font-size: 18px;
+}
+
+.cookie__content button {
+    margin-right: 40px;
+    border-radius: 36px;
+    background-color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.cookie__content button:hover {
+    background-color: #edf9ed;
+}

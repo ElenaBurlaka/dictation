@@ -4,9 +4,8 @@
     gap: 81px;
     padding-top: 21px;
     padding-left: 66px;
-    /* width: 80%; */
     width: 335px;
-    height: 100vh;
+    /* height: 100%; */
     background-color: #99AF99;
 }
 
@@ -14,12 +13,15 @@
     display: flex;
     gap: 13px;
     align-items: center;
+    cursor: pointer;
+    padding: 10px;
 }
 
 .sidebar__pages {
     display: flex;
     flex-direction: column;
     gap: 9px;
+    height: 100%;
     /* width: 100%; */
 }
 
