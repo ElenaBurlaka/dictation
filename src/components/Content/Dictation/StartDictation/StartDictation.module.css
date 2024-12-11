@@ -1,0 +1,62 @@
+.startDictation {
+    margin-top: 20%;
+    text-align: center;
+}
+
+.startDictation p {
+    font-size: 18px;
+}
+
+.startDictation__translation {
+    font-family: serif;
+}
+
+.startDictation__buttons button {
+    position: relative;
+    border: 1px solid #373b42; 
+    /* padding: 11px 45px; */
+    width: 220px;
+    padding: 11px 0px;
+    background-color: #bbcad3;
+    font-size: 18px;
+    color: #000;
+    gap: 20px;
+    text-decoration: none;
+    overflow: hidden; 
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.startDictation__buttons button:hover::before {
+    content: "";
+    position: absolute;
+    top: 0px; 
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    box-shadow: inset 0 0 0 1px #858e9e;
+    pointer-events: none;
+    box-sizing: border-box; 
+}
+
+@media (max-width: 497px) {
+
+    .startDictation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .startDictation p {
+        /* width: 350px; */
+        width: 80%;
+        line-height: 140%;
+    }
+
+    .startDictation__buttons button {
+        width: 220px;
+        padding: 11px 0px;
+        font-size: 16px;
+        margin-right: 0px;
+    }
+}

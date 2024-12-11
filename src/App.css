@@ -1,0 +1,65 @@
+.App {
+    height: 100%;
+}
+
+.wrapper {
+    height: 100%;
+}
+
+.content {
+    display: flex;
+    height: 100%;
+}
+
+:root {
+    --column-1-width: 65%;
+    --column-2-width: 10%;
+    --column-3-width: 25%;
+}
+
+/* .container__buttons {
+    border: 1px solid #000;
+    display: grid;
+    grid-template-columns: var(--column-1-width) var(--column-2-width) var(--column-3-width);
+    grid-template-rows: auto;
+    position: relative;
+    gap: 0;
+} */
+
+/* .container__buttons button {
+    background-color: #D8E1D8;
+    padding: 12px 2em;
+    text-align: center;
+    font-size: 1em;
+    border: none;
+    width: 100%;
+    box-sizing: border-box;
+} */
+
+/* .container__buttons::before,
+.container__buttons::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background-color: black;
+} */
+
+/* .container__buttons::before {
+    left: calc(var(--column-1-width) - 0.5px);
+}
+
+.container__buttons::after {
+    left: calc(var(--column-1-width) + var(--column-2-width) - 0.5px);
+}
+
+.container__buttons button:hover {
+    box-shadow: inset 0 0 0 1px #99AF99;
+}
+
+.delete-container__buttons {
+    --column-1-width: 40%;
+    --column-2-width: 10%;
+    --column-3-width: 50%;
+} */

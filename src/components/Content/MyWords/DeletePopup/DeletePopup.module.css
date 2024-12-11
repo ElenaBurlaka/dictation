@@ -1,0 +1,122 @@
+.deletePopup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.371);
+    overflow: hidden;
+    overflow-y: auto;
+    transition: opacity 0.3s;
+    z-index: 999;
+}
+
+.deletePopup__wrapper {
+    position: absolute;
+    top: 0;
+    left: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100%;
+}
+
+.deletePopup__content {
+    position: relative;
+    margin: 20px;
+    width: 275px;
+    max-width: 375px;
+    /* height: 403px; */
+    height: 100%;
+    border-radius: 20px;
+    background-color: #fff;
+    padding: 40px 40px 40px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.deletePopup__content_close {
+    position: absolute;
+    top: 20px; 
+    right: 20px;
+    border: none;
+    background: none;
+    width: 20px;
+    cursor: pointer;
+}
+
+.deletePopup__content img {
+    width: 15px;
+}
+
+.deletePopup__notice {
+    text-align: center;
+    line-height: 1.5;
+}
+
+.deletePopup__buttons div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.deletePopup__buttons button {
+    background-color: #bbcad3;
+    padding: 12px 34px;
+    font-size: 15px;
+    border: 1px solid #373b42; 
+}
+
+.deletePopup__buttons button:hover {
+    cursor: pointer;
+    box-shadow: inset 0 0 0 1px #858e9e;
+}
+
+@media (max-width: 497px) {
+    .deletePopup__wrapper {
+        left: 0%;
+    }
+
+    .deletePopup__content {
+        width: 250px;
+        padding: 20px;
+    }
+
+    .deletePopup__inputs {
+        margin-top: 30px;
+    }
+
+    .deletePopup__inputs input {
+        height: 30px;
+        padding-left: 15px;
+        font-size: 12px;
+    }
+
+    .deletePopup__buttons div {
+        justify-content: space-around;
+    }
+
+    .deletePopup__buttons button {
+        padding: 5px 20px;
+        font-size: 12px;
+    }
+
+    .deletePopup__content_close img {
+        width: 12px;
+    }
+
+    .deletePopup__notice p {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 497px) and (max-width: 768px) {
+    .deletePopup__wrapper {
+        left: 0%;
+    }
+
+    .deletePopup__notice p {
+        font-size: 18px;
+    }
+}

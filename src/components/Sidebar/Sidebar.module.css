@@ -1,0 +1,111 @@
+.sidebar {
+  /* display: flex; */
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  /* flex-direction: column; */
+  gap: 81px;
+  padding-top: 21px;
+  padding-left: 46px;
+  padding-right: 50px;
+  width: 250px; 
+  height: 100vh;
+  background-color: #a5a1b8;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease; 
+  z-index: 997;
+}
+
+.sidebar.open {
+  transform: translateX(0);
+}
+
+.sidebar.closed {
+  transform: translateX(-100%); /* Скрываем сайдбар */
+}
+  
+.sidebar__burger_menu {
+  display: none;
+  width: 30px;
+  height: 24px;
+  cursor: pointer;
+  z-index: 1100;
+  position: fixed;
+  top: 15px;
+  left: 15px;
+}
+  
+.sidebar__burger_line {
+  width: 80%;
+  height: 4px;
+  background-color: #333;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+  
+  /* При открытии бургер-меню (крестик) */
+  .sidebar__burger_menu.open .sidebar__burger_line:nth-child(1) {
+    transform: rotate(45deg);
+    position: relative;
+    top: 10px;
+    /* height: 2px; */
+  }
+  
+  .sidebar__burger_menu.open .sidebar__burger_line:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .sidebar__burger_menu.open .sidebar__burger_line:nth-child(3) {
+    transform: rotate(-45deg);
+    position: relative;
+    top: -10px;
+    /* height: 2px; */
+  }
+  
+/* Стили для блоков с пользователем и страницами */
+.sidebar__user {
+  gap: 13px;
+  align-items: center;
+  padding: 10px 10 px 10pc 0px;
+}
+
+.sidebar__pages {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  height: 100%;
+  margin-top: 60px;
+}
+  
+.sidebar__pages a {
+  font-size: 150%;
+  text-decoration: none;
+  color: #000;
+}
+
+.sidebar__pages a:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 994px) {
+  .sidebar {
+    transform: translateX(0); /* Сайдбар всегда виден */
+  }
+}
+  
+@media (max-width: 994px) {
+
+  .sidebar__burger_menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .sidebar {
+    transform: translateX(-100%);
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+  }
+}

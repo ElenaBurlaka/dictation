@@ -1,0 +1,41 @@
+.content {
+    width: 100%; /* do not delete this string otherwise there will be troubles with search input */ 
+    min-height: 100vh;
+    margin-bottom: 30px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+@media (max-width: 497px) {
+    .content {
+        margin-left: -300px;
+    }
+}
+
+@media (min-width: 497px) and (max-width: 768px) {
+    .content {
+        margin-left: -300px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 994px) {
+    .content {
+        margin-left: -30%;
+        /* transform: translateX(-200px); */
+    }
+}
+
+@media (min-width: 994px) and (max-width: 1250px) {
+    .content {
+        width: 100%; 
+        min-height: 100vh;
+        margin-bottom: 30px;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /* margin-left: -35%; */
+    }
+}

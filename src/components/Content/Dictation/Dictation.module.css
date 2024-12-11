@@ -1,0 +1,33 @@
+.dictation {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    flex-direction: column;
+    margin-top: 20%;
+}
+
+.editPopup__buttons button{
+    background-color: #bbcad3;
+    padding: 12px 35px;
+    font-size: 16px;
+    border: 1px solid #373b42; 
+}
+
+.editPopup__buttons button:hover {
+    box-shadow: inset 0 0 0 1px #858e9e;
+}
+
+.dictation a {
+    position: relative;
+    border: 1px solid #373b42; 
+    padding: 12px 35px;
+    background-color: #bbcad3;
+    font-size: 18px;
+    color: #000;
+    text-decoration: none;
+    overflow: hidden; 
+}
+
+.dictation a:hover {
+    box-shadow: inset 0 0 0 1px #858e9e
+}
