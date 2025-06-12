@@ -26,8 +26,10 @@ const StartDictation = ({ formData }) => {
         setUsedIndices(prev => [...prev, randomIndex]);
 
         const selectedSentence = availableSentences[randomIndex];
-        setRandomSentence(selectedSentence.sentence);
-        setRandomTranslation(selectedSentence.translation);
+        // setRandomSentence(selectedSentence.sentence);
+        setRandomSentence(selectedSentence.translation);
+        // setRandomTranslation(selectedSentence.translation);
+        setRandomTranslation(selectedSentence.sentence);
         setShowTranslation(false);
         setMessage('');
     };
@@ -50,8 +52,10 @@ const StartDictation = ({ formData }) => {
         const randomIndex = Math.floor(Math.random() * availableSentences.length);
         setUsedIndices([randomIndex]); 
         const selectedSentence = availableSentences[randomIndex];
-        setRandomSentence(selectedSentence.sentence);
-        setRandomTranslation(selectedSentence.translation);
+        // setRandomSentence(selectedSentence.sentence);
+        // setRandomTranslation(selectedSentence.translation);
+        setRandomSentence(selectedSentence.translation);
+        setRandomTranslation(selectedSentence.sentence);
     };
 
     const handleNextSentence = () => {

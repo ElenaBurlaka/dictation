@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.58626c61.css",
+    "main.js": "/static/js/main.d0ac0ef8.js",
+    "static/js/453.6de7541d.chunk.js": "/static/js/453.6de7541d.chunk.js",
+    "static/media/Newsreader-VariableFont_opsz,wght.ttf": "/static/media/Newsreader-VariableFont_opsz,wght.5032d4be14f4a0091c82.ttf",
+    "static/media/loupe.png": "/static/media/loupe.1d92f967297920015306.png",
+    "index.html": "/index.html",
+    "main.58626c61.css.map": "/static/css/main.58626c61.css.map",
+    "main.d0ac0ef8.js.map": "/static/js/main.d0ac0ef8.js.map",
+    "453.6de7541d.chunk.js.map": "/static/js/453.6de7541d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.58626c61.css",
+    "static/js/main.d0ac0ef8.js"
+  ]
+}
